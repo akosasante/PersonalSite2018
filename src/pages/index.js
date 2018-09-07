@@ -6,6 +6,12 @@ import Links from "../components/Sidebar/Links";
 
 import "./style.scss";
 
+const bgShapes = Array(24)
+  .fill()
+  .map((elem, i) => {
+    return <div className={`shape shape--${i + 1}`} key={i} />;
+  }); //TODO: Is there a way to manually keep this number in sync with the one in the scss file?
+
 const IndexPage = () => (
   <div className="index">
     <div className="main">
@@ -20,12 +26,15 @@ const IndexPage = () => (
     </div>
 
     <div className="aside">
-      <div className="top">
-        <About />
+      <div className="inner-container">
+        <div className="top">
+          <About />
+        </div>
+        <div className="bottom">
+          <Links />
+        </div>
       </div>
-      <div className="bottom">
-        <Links />
-      </div>
+      <div className="shape-container">{bgShapes}</div>
     </div>
   </div>
 );

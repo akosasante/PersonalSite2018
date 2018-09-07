@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 
 import "./style.scss";
-import "font-awesome/css/font-awesome.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Links extends Component {
   render() {
     return (
       <div className="links">
         <ul className="icons-list">
-          <li className="icon">
+          <li className="icon icon--fa">
             <a href="https://www.github.com/akosasante" target="_blank">
-              <i className="fa fa-github" />
+              <FontAwesomeIcon icon={["fab", "github"]} />
             </a>
           </li>
           {/* <li className="icon">
@@ -18,14 +18,14 @@ class Links extends Component {
               <i className="fa fa-twitter"></i>
             </a>
           </li> */}
-          <li className="icon">
+          <li className="icon icon--fa">
             <a href="https://www.linkedin.com/in/akosuaasante" target="_blank">
-              <i className="fa fa-linkedin" />
+              <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
             </a>
           </li>
-          <li className="icon">
+          <li className="icon icon--fa">
             <a href="mailto:akosuaasante@gmail.com" target="_blank">
-              <i className="fa fa-envelope" />
+              <FontAwesomeIcon icon="envelope" />
             </a>
           </li>
         </ul>

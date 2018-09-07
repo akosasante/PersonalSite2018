@@ -10,6 +10,13 @@ import favicon16 from "../assets/favicons/favicon-16x16.png";
 import favicon32 from "../assets/favicons/favicon-32x32.png";
 import favicon96 from "../assets/favicons/favicon-96x96.png";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn, faCodepen } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faAnchor, faAsterisk } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faGithub, faLinkedinIn, faCodepen, faEnvelope, faAsterisk);
+
 class TemplateWrapper extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
