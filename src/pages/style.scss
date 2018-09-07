@@ -182,7 +182,13 @@ $aside-width: 35%;
   height: 100%;
   padding: 5%;
   z-index: -10;
-  $shape-count: 25; // number of shapes to render
+  @include media("<medium") {
+    z-index: 1;
+  }
+  top: 0;
+  overflow-y: hidden;
+
+  $shape-count: 35; // number of shapes to render
 
   .shape {
     font-family: "Font Awesome 5 Free";
@@ -191,7 +197,7 @@ $aside-width: 35%;
   @for $i from 1 through $shape-count {
     $speed: 40 + random(10); // speed of shape animation
     $rotation: random(360); // randomize the rotational animation for each shape\
-    $shape-types: $fa-var-star, $fa-var-cloud, $fa-var-bolt, $fa-var-play, $fa-var-asterisk, $fa-var-sun; //font awesome codes
+    $shape-types: $fa-var-star, $fa-var-plus, $fa-var-bolt, $fa-var-play, $fa-var-asterisk, $fa-var-sun; //font awesome codes
     $shape-colors: #ffa726, #ffeb3b, #f5f5f5, #e1bee7;
     $shape-area-width: random(10) + 100%;
     $shape-size: random(30) * 0.1rem;
@@ -209,8 +215,14 @@ $aside-width: 35%;
     .shape--#{$i} {
       animation: shape-#{$i} #{$speed}s cubic-bezier(0.9, 1.22, 0.71, 0.01) infinite;
       width: $shape-area-width;
+      height: 0;
       margin-left: $shape-size * 5;
       margin-top: $shape-size * 2;
+      @include media("<medium") {
+        text-align: left;
+        margin-left: $shape-size * 1;
+        margin-top: $i * 0.1 * 2rem;
+      }
       &:after {
         content: fa-content(nth($shape-types, random(length($shape-types)))); //select a random shape (and below, colour)
         color: nth($shape-colors, random(length($shape-colors)));

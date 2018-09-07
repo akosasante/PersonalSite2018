@@ -6,7 +6,7 @@ import Links from "../components/Sidebar/Links";
 
 import "./style.scss";
 
-const bgShapes = Array(24)
+const bgShapes = Array(34)
   .fill()
   .map((elem, i) => {
     return <div className={`shape shape--${i + 1}`} key={i} />;
@@ -19,7 +19,7 @@ const IndexPage = () => (
         Hi, I'm <span className="bold">Akosua Asante</span>
       </h5>
 
-      <h3 className="bold">Software developer experienced in building robust web applications and passionate about beautiful and functional interface</h3>
+      <h3 className="bold">A software developer experienced in building robust web applications and passionate about beautiful and functional interface</h3>
 
       <ExperienceSection />
       <ProjectsSection />
