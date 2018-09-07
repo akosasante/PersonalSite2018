@@ -1,4 +1,4 @@
-@import '../../assets/scss/main.scss';
+@import "../../assets/scss/main.scss";
 
 .experience-unit {
   .image {
@@ -18,38 +18,58 @@
       box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.3);
     }
   }
-  
+
   .title {
     padding: 8px 0px;
     font-size: 1.8rem;
   }
 
+  .experience-logo {
+    flex: 2 0 20%;
+  }
+  .position {
+    padding: 8px 0px;
+    font-size: 1.5rem;
+  }
+
   .time-period {
     font-size: 1.2rem;
-    line-height: 0.9rem;
+    line-height: 1.2rem;
     padding-bottom: 12px;
   }
 
   .subtitle {
     color: $grey-color;
     font-size: 1.4rem;
+    flex: 3 1 60%;
+    margin-left: 1rem;
   }
 
-  @include media('>=medium', '<large') {
+  @include media(">=small") {
+    .experience-details {
+      display: flex;
+      .experience-details--secondary-info {
+        margin-left: 1rem;
+        flex: 1 1 20%;
+      }
+    }
+  }
+
+  @include media(">=medium", "<large") {
     .image {
       height: 110px;
     }
   }
 
-  @include media('<=medium', '>xsmall') {
+  @include media("<=medium", ">xsmall") {
     padding-bottom: 15px;
-    
+
     .image {
       height: 140px;
     }
   }
 
-  @include media('<=xsmall') {
+  @include media("<=xsmall") {
     padding-bottom: 15px;
 
     .image {

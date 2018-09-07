@@ -1,10 +1,8 @@
-import React from 'react'
-import Section from '../Section'
-import ExperienceUnit from '../ExperienceUnit'
+import React from "react";
+import Section from "../Section";
+import ExperienceUnit from "../ExperienceUnit";
 
-import zomatoLogo from '../../assets/images/experience/zomato-logo.svg'
-import fitsoLogo from '../../assets/images/experience/fitso-logo.jpg'
-import kayakoLogo from '../../assets/images/experience/kayako-logo-2.jpg'
+import sortableLogo from "../../assets/images/experience/sortable-logo.png";
 
 class ExperienceSection extends React.Component {
   render() {
@@ -12,37 +10,29 @@ class ExperienceSection extends React.Component {
       <Section title="Experience">
         <div className="row">
           <ExperienceUnit
-            logo={zomatoLogo}
-            colour='#CB202D'
-            title='Zomato'
-            link='https://www.zomato.com/'
-            timeperiod='2014 - 2015'
-            subtitle='Learnt the ins and outs of product development and
-              built various features including a completely new product.'
+            logo={sortableLogo}
+            colour="#fff"
+            title="Sortable"
+            link="https://www.sortable.com/"
+            timeperiod="Sep 2017 - Jul 2017"
+            position="Software Developer"
+            subtitle="Developed reusable components for an AngularJS business intelligence/data-analysis product.
+            In addition, maintained existing codebase, fixed bugs, and extended REST API while migrating from Clojure to Scala backend."
           />
           <ExperienceUnit
-            logo={fitsoLogo}
-            colour='#FFFFFF'
-            title='Fitso'
-            link='https://www.getfitso.com/'
-            timeperiod='2016'
-            subtitle='Built real time GPS tracking on the iOS app,
-              all consumer facing web modules and external APIs in
-              this early stage startup.'
-          />
-          <ExperienceUnit
-            logo={kayakoLogo}
-            colour='#403949'
-            title='Kayako'
-            link='https://www.kayako.com/'
-            timeperiod='2017 - 2018'
-            subtitle='Worked as a Product Engineer on email processing,
-              push notifications, SLAs amongst other things.'
+            logo={sortableLogo}
+            colour="#fff"
+            title="Sortable"
+            link="https://www.sortable.com/"
+            timeperiod="Sep 2016 - Sep 2017"
+            position="Customer Success Specialist"
+            subtitle="Investigated the performance of our advertising tech on clients' websites using Chrome Dev Tools.
+            Used postgreSQL and PrestoDB to gain insight on customer concerns before escalating actionable bug reports to the engineering team."
           />
         </div>
       </Section>
-    )
+    );
   }
 }
 
-export default ExperienceSection
+export default ExperienceSection;

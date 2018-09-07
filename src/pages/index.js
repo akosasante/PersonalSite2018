@@ -21,8 +21,8 @@ const IndexPage = () => (
 
       <h3 className="bold">A software developer experienced in building robust web applications and passionate about beautiful and functional interface</h3>
 
-      <ExperienceSection />
       <ProjectsSection />
+      <ExperienceSection />
     </div>
 
     <div className="aside">

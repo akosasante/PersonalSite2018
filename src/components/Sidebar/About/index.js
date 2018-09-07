@@ -8,7 +8,7 @@ class About extends Component {
       <div className="about">
         <div className="image" />
         <div className="bio">
-          A technology enthusiast &amp; board game addict, who loves reading, learning new languages and trying just about anything once.
+          I'm also a technology enthusiast &amp; board game addict, who loves reading, learning new languages and trying just about anything once.
           <div className="emoji">🤖 &nbsp;🎲&nbsp;📚&nbsp; 🌐</div>
         </div>
       </div>
