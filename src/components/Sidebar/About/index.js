@@ -1,23 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import './style.scss'
+import "./style.scss";
 
 class About extends Component {
-  render () {
+  render() {
     return (
       <div className="about">
-        <div className="image">
-        </div>
+        <div className="image" />
         <div className="bio">
-          A technology enthusiast &amp; certified scuba diver, who loves travelling, paints occasionally
-          and follows football ardently.
-          <div className="emoji">
-            🤖 &nbsp;🏔&nbsp;🎨&nbsp; ⚽️
-          </div>
+          A technology enthusiast &amp; board game addict, who loves reading, learning new languages and trying just about anything once.
+          <div className="emoji">🤖 &nbsp;🏔&nbsp;🎨&nbsp; ⚽️</div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default About
+export default About;

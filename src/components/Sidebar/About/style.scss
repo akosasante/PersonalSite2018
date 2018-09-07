@@ -1,4 +1,4 @@
-@import '../../../assets/scss/main.scss';
+@import "../../../assets/scss/main.scss";
 
 $max-width: 230px;
 $margin-bottom: 40px;
@@ -11,7 +11,7 @@ $margin-bottom: 40px;
     max-width: $max-width;
     height: 180px;
     background-size: cover;
-    background-image: url(../../../assets/images/praagya.jpg);
+    background-image: url(../../../assets/images/akosua.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
@@ -19,8 +19,8 @@ $margin-bottom: 40px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%); /* For Webkit browsers */
     filter: gray; /* For IE 6 - 9 */
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
     margin-bottom: $margin-bottom;
 
     &:hover {
@@ -45,18 +45,18 @@ $margin-bottom: 40px;
     }
   }
 
-  @include media('>small', '<=medium') {
+  @include media(">small", "<=medium") {
     .bio {
       .emoji {
-        font-size: 2.0rem;
+        font-size: 2rem;
         padding-top: 10px;
       }
     }
   }
 
-  @include media('<=small') {
+  @include media("<=small") {
     .bio {
-      line-height: 2.0rem;
+      line-height: 2rem;
       font-size: 1.4rem;
 
       .emoji {
@@ -66,7 +66,7 @@ $margin-bottom: 40px;
     }
   }
 
-  @include media('<=medium') {
+  @include media("<=medium") {
     text-align: center;
     margin-bottom: 0px;
 
