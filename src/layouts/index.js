@@ -12,10 +12,10 @@ import favicon96 from "../assets/favicons/favicon-96x96.png";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn, faCodepen } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faAnchor, faAsterisk } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn, faCodepen, faNodeJs, faVuejs, faSlack } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faAsterisk } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faGithub, faLinkedinIn, faCodepen, faEnvelope, faAsterisk);
+library.add(faGithub, faLinkedinIn, faCodepen, faEnvelope, faAsterisk, faNodeJs, faVuejs, faSlack);
 
 class TemplateWrapper extends React.Component {
   render() {

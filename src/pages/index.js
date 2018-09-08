@@ -16,10 +16,10 @@ const IndexPage = () => (
   <div className="index">
     <div className="main">
       <h5>
-        Hi, I'm <span className="bold">Akosua Asante</span>
+        Hi, I'm <span className="bold">Akosua Asante!</span>
       </h5>
 
-      <h3 className="bold">A software developer experienced in building robust web applications and passionate about beautiful and functional interface</h3>
+      <h3 className="bold">A software developer experienced in building robust web applications and passionate about beautiful and functional interfaces.</h3>
 
       <ProjectsSection />
       <ExperienceSection />
