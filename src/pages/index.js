@@ -15,14 +15,35 @@ const bgShapes = Array(34)
 const IndexPage = () => (
   <div className="index">
     <div className="main">
-      <h5>
-        Hi, I'm <span className="bold">Akosua Asante!</span>
-      </h5>
+      <div className="site-header">
+        <h5>
+          Hi, I'm <span className="bold">Akosua Asante!</span>
+        </h5>
 
-      <h3 className="bold">A software developer experienced in building robust web applications and passionate about beautiful and functional interfaces.</h3>
-
+        <h3 className="bold">A software developer experienced in building robust web applications and passionate about beautiful and functional interfaces.</h3>
+      </div>
       <ProjectsSection />
+      <section className="svg-container">
+        <svg
+          className="svg-curve svg-curve--project-bottom"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ isolation: "isolate" }}
+          viewBox="0 1112.623 1920 167.377"
+        >
+          <path d="M1920 1280H0q295.348-131.106 547-145c251.652-13.894 370.284 105.662 629 85q258.716-20.662 744-85" fill="#FFFFFA" />
+        </svg>
+      </section>
       <ExperienceSection />
+      <section className="svg-container svg-container--experience-bottom">
+        <svg
+          className="svg-curve svg-curve--experience-bottom"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ isolation: "isolate" }}
+          viewBox="0 1112.623 1920 167.377"
+        >
+          <path d="M1920 1280H0q295.348-131.106 547-145c251.652-13.894 370.284 105.662 629 85q258.716-20.662 744-85" fill="#FFFFFA" />
+        </svg>
+      </section>
     </div>
 
     <div className="aside">

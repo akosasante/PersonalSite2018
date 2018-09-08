@@ -1,20 +1,16 @@
-import React, {Component} from 'react'
+import React, { Component } from "react";
 
-import './style.scss';
+import "./style.scss";
 
 class Section extends Component {
-  render () {
+  render() {
     return (
-      <div className="section">
-        <h6 className="bold">
-          {this.props.title}
-        </h6>
-        <div className="section-units">
-          {this.props.children}
-        </div>
+      <div className={`section section--${this.props.title}`}>
+        <h6 className="bold">{this.props.title}</h6>
+        <div className="section-units">{this.props.children}</div>
       </div>
-    )
+    );
   }
 }
 
-export default Section
+export default Section;

@@ -1,12 +1,43 @@
-@import '../../assets/scss/main.scss';
+@import "../../assets/scss/main.scss";
+
+$vertical-padding: 50px;
+$horizontal-padding: 64px;
 
 .section {
   padding-top: 20px;
   padding-bottom: 20px;
+  @include media(">=large") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 8%;
+
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media(">=medium", "<large") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 8%;
+
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media(">xsmall", "<medium") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 48px;
+
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
+  @include media("<=xsmall") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 24px;
+
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
 
   h6 {
     font-size: 2rem;
     padding-bottom: 5px;
     margin-bottom: 10px;
+  }
+  &.section--Experience {
+    background: #303f9f;
+    color: #fff;
   }
 }

@@ -31,7 +31,7 @@ $aside-width: 35%;
 
     width: $main-width;
     margin-right: $main-margin-right;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    // padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
   }
   @include media(">=medium", "<large") {
     $main-width: 70%;
@@ -41,7 +41,7 @@ $aside-width: 35%;
 
     width: $main-width;
     margin-right: $main-margin-right;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    // padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
   }
   @include media(">xsmall", "<medium") {
     $main-width: 100%;
@@ -51,7 +51,7 @@ $aside-width: 35%;
 
     width: $main-width;
     margin-right: $main-margin-right;
-    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+    // padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
   }
   @include media("<=xsmall") {
     $main-width: 100%;
@@ -61,14 +61,14 @@ $aside-width: 35%;
 
     width: $main-width;
     margin-right: $main-margin-right;
-    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+    // padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
   }
 }
 
 .aside {
   align-self: stretch;
   margin: 0 auto;
-  background: linear-gradient(168deg, #58c3e6 0%, #667eea 45%, #764ba2 100%);
+  background: linear-gradient(180deg, #58c3e6 0%, #667eea 45%, #764ba2 100%);
   color: white;
 
   // Positioning on the side for
@@ -141,6 +141,54 @@ $aside-width: 35%;
     // padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
   }
 }
+.site-header {
+  @include media(">=large") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 8%;
+
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media(">=medium", "<large") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 8%;
+
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media(">xsmall", "<medium") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 48px;
+
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
+  @include media("<=xsmall") {
+    $vertical-padding: 50px;
+    $horizontal-padding: 24px;
+
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
+}
+
+.svg-container {
+  $project-background: #303f9f;
+  &.svg-container--experience-bottom {
+    background: $project-background;
+    @include media(">medium") {
+      display: none;
+    }
+  }
+  .svg-curve {
+    width: 120%;
+    position: relative;
+    top: 1rem;
+    left: -1rem;
+    &.svg-curve--project-bottom path {
+      fill: $project-background;
+    }
+    &.svg-curve--experience-bottom path {
+      fill: #58c3e6;
+    }
+  }
+}
 
 .inner-container {
   font-family: "Open Sans", sans-serif; //Reset font
@@ -186,7 +234,7 @@ $aside-width: 35%;
     z-index: 1;
   }
   top: 0;
-  overflow-y: hidden;
+  overflow: hidden;
 
   $shape-count: 35; // number of shapes to render
 
