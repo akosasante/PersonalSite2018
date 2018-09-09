@@ -8,6 +8,7 @@ $aside-width: 35%;
 
 .main {
   margin: 0 auto;
+  overflow-x: hidden;
 
   h3 {
     font-size: 3.4rem;
@@ -192,6 +193,8 @@ $aside-width: 35%;
 
 .inner-container {
   font-family: "Open Sans", sans-serif; //Reset font
+  position: relative;
+  z-index: 2;
   // Positioning at the bottom for
   // smaller screens
   @include media("<medium") {
