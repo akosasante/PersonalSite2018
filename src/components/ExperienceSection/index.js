@@ -14,7 +14,7 @@ class ExperienceSection extends React.Component {
             colour="#fff"
             title="Sortable"
             link="https://www.sortable.com/"
-            timeperiod="Sep 2017 - Jul 2017"
+            timeperiod="Sep 2017 - Jul 2018"
             position="Software Developer"
             subtitle="Developed reusable components for an AngularJS business intelligence/data-analysis product.
             In addition, maintained existing codebase, fixed bugs, and extended REST API while migrating from Clojure to Scala backend."
