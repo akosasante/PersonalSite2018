@@ -24,9 +24,9 @@ function getIconJSX(iconProp, i) {
   if (iconMap[iconProp]) {
     const icon = iconMap[iconProp];
     if (icon.fontawesome) {
-      return <FontAwesomeIcon color={icon.color} key={i} className="tech-icon" icon={["fab", icon.name]} />;
+      return <FontAwesomeIcon color={icon.color} key={i} className="tech-icon" icon={["fab", icon.name]} title={iconProp} />;
     } else {
-      return <img key={i} src={icon.name} alt={iconProp} className="tech-icon" />;
+      return <img key={i} src={icon.name} alt={iconProp} className="tech-icon" title={iconProp} />;
     }
   }
 }
